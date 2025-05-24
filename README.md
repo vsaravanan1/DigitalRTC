@@ -1,2 +1,4 @@
 # Pi Pico Alarm Clock
 This project functions both as a digital alarm clock and as a stopwatch. It connects to WiFi in order to obtain the local time and sets the Real Time Clock peripheral accordingly. It uses a Raspberry Pi Pico W microcontroller, an ESP32 microcontroller, an SSD1306 OLED display, and a 3-by-4 matrix keypad. The wireless communication code (uploaded to the ESP32) was written on the Arduino IDE; the rest of the project was done on CLion using the Pi Pico C SDK. The UART communication protocol was used in order to transmit local time data from the ESP32 to the Pi Pico W. The SPI communication protocol (implemented directly, without the use of external libraries aside from those in the C sdk) was used for commmunication with the dual-channel DAC (MCP4822) and the OLED display (SSD1306).
+
+Hunter Adams's ECE4760 lectures were very helpful for me in the course of making this project. They can be found over at https://ece4760.github.io/.
